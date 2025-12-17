@@ -44,16 +44,40 @@ then uploud image you got from step 1, and set Threshold to 1000
 
 if done, click Analisis Gambar and see the output
 
-u can see the previuw if image got printing in world
+u can see the previuw if image get printing in world
 
 <img width="467" height="316" alt="image" src="https://github.com/user-attachments/assets/bdb0a456-2664-485c-ab88-ca6d667374e2" />
 
-then click download button for got the tabel pixel
+then click download button for get the tabel pixel, file name its tabelart.txt
 
 # How to run
 
 move [artloader.lua](https://github.com/LRiqlapa/picture-to-world/blob/main/artloader.lua) and tabelart.txt in to your bothax scripts folder 
 
 - directory scripts:
+
+  Android = /storage/emulated/0/Android/media/com.rtsoft.growtopia/scripts/
+
+  Windows = ("USERPROFILE")\\AppData\\Local\\Growtopia\\scripts\\
+
+file tabelart.txt obtained after you following step 1 and step 2
+
+and then go to your world, standing on the bottom left, see the picture:
+<img width="311" height="184" alt="image" src="https://github.com/user-attachments/assets/6503c2ea-4711-46fb-9ee7-5e3db90e93ed" />
+
+dont using /ghost when run !!!
+
+then execute artloader.lua, also your world alredy full display shelf.
+
+# If you get disconnect or wanna re render because have some collor missed:
+
+go to where you are got disconnect or missed collor
+
+like this:
+
+<img width="228" height="280" alt="image" src="https://github.com/user-attachments/assets/608f7774-52a9-42df-9ea2-f7babc08641c" />
+
+and execute artloader.lua again, just that
+
 
 
