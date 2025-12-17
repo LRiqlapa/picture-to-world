@@ -3,12 +3,13 @@ delay = 100
 
 
 
-
 -------------------------------
 -- JANGAN SENTUH DIBAWAH INI -- 
 --   DONT TOUCH THE BOTTOM   --
 -------------------------------
 
+-- ## SC CREATED BY Void_String ## --
+-- yg ngapus wm itu ga rispek bwanget wok
 
 function fnd(id)
     count = 0
@@ -61,3 +62,4 @@ for x = 1, 99, 10 do
     revers = not revers
 
 end
+
