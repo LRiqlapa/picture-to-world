@@ -17,7 +17,7 @@ and click image converter:
 <img width="351" height="313" alt="image" src="https://github.com/user-attachments/assets/eabfad4c-06ac-4bcb-be97-efb29ef973cc" />
 
 
-then uploud your image and make sure the pixel its 24k and rasio 100 : 60 
+then uploud your image and set the pixel its 24k and rasio 100 : 60 
 
 like this:
 
