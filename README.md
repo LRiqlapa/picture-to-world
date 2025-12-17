@@ -8,6 +8,8 @@ also need normal world (cbd if can) full display shelf, you can using [putdispla
 
 # Setup
 
+`Step 1`:
+
 first go here https://lriqlapa.pages.dev/ to convert the picture
 
 and click image converter:
@@ -34,3 +36,19 @@ if done, click Konversi Gambar and download the output image
 go back to dashboard and click Pixel Collor Analyzer
 
 <img width="317" height="336" alt="image" src="https://github.com/user-attachments/assets/654bfa22-a4c0-420b-afef-0029158969da" />
+
+
+then uploud image you got from step 1, and set Threshold to 1000
+
+<img width="549" height="330" alt="image" src="https://github.com/user-attachments/assets/8db9353f-ddb3-40c3-b7b5-9eb6acaf06cf" />
+
+if done, click Analisis Gambar and see the output
+
+u can see the previuw if image got printing in world
+
+<img width="467" height="316" alt="image" src="https://github.com/user-attachments/assets/bdb0a456-2664-485c-ab88-ca6d667374e2" />
+
+then click download button for got the tabel pixel
+
+# How to run
+
