@@ -39,73 +39,6 @@ local collor = {
     ["Ungu Gelap"] = 8232
 }
 
-
--- 1158
--- 1744
--- 556
--- 558
--- 566
--- 564
--- 1156
--- 562
--- 560
--- 568
--- 4942
--- 570
--- 4944
--- 8236
--- 8238
--- 2962
--- 8228
--- 8230
--- 8234
--- 8232
-
--- function getitem(id)
---     LogToConsole("find item"..id)
-    
---     -- String template statis (dengan placeholder untuk nilai 0/1)
---     local packetLines = {
---         "action|dialog_return\ndialog_name|item_search\nsearched|wallpaper|"
---     }
-    
---     -- Daftar ID yang ada di template original
---     local itemIds = {
---         198, 199, 200, 201, 284, 285, 326, 327, 432, 433,
---         556, 557, 558, 559, 560, 561, 562, 563, 564, 565,
---         566, 567, 568, 569, 570, 571, 1156, 1157, 1158, 1159,
---         1726, 1727, 1744, 1745, 1878, 1879, 1982, 1983,
---         2496, 2497, 2498, 2499, 2500, 2501, 2502, 2503,
---         2504, 2505, 2506, 2507, 2508, 2509, 2788, 2789,
---         2962, 2963, 2988, 2989, 2990, 2991, 3082, 3083,
---         3786, 3787, 4160, 4161, 4606, 4607, 4942, 4943,
---         4944, 4945, 5272, 5273, 7854, 7855, 8206, 8207,
---         8208, 8209, 8210, 8211, 8228, 8229, 8230, 8231,
---         8232, 8233, 8234, 8235, 8236, 8237, 8238, 8239,
---         8322, 8323, 8338, 8339, 9290, 9291, 9480, 9481,
---         9626, 9627, 9668, 9669, 10636, 10637, 10708, 10709,
---         10710, 10711, 11278, 11279, 12220, 12221, 13468, 13469,
---         14060, 14061, 15086, 15087
---     }
-    
---     -- Tambahkan setiap ID dengan nilai yang sesuai
---     for _, itemId in ipairs(itemIds) do
---         if type(itemId) == "number" then
---             -- Cek apakah ID ini ada di targetIds DAN jumlahnya 0 di inventory
---             local shouldTake = (id == itemId)
---             table.insert(packetLines, tostring(itemId) .. "|" .. (shouldTake and "1" or "0"))
---         else
---             -- Untuk baris non-ID (seperti "stay|0")
---             table.insert(packetLines, itemId)
---         end
---     end
-    
---     -- Gabungkan semua baris menjadi satu paket
---     local packet = table.concat(packetLines, "\n")
---     LogToConsole(packet.."\nstay|0")
---     SendPacket(2, packet.."\nstay|0")
--- end
-
 function getitem(ids)
 local packet = [[action|dialog_return
 dialog_name|item_search
@@ -122,7 +55,7 @@ searched|wallpaper|
 433|0
 ]]
     
-    -- Tambahkan bagian 556-571 dengan logika dinamis baru
+
     packet = packet .. "556|" .. (ids == 556 and "1" or "0") .. "\n"
     packet = packet .. "557|0\n"
     packet = packet .. "558|" .. (ids == 558 and "1" or "0") .. "\n"
@@ -145,8 +78,6 @@ searched|wallpaper|
     packet = packet .. "1157|0\n"
     packet = packet .. "1158|" .. (ids == 1158 and "1" or "0") .. "\n"
     packet = packet .. "1159|0\n"
-    
-    -- Lanjutkan dengan bagian statis
     packet = packet .. [[1726|0
 1727|0
 ]]
@@ -154,8 +85,6 @@ searched|wallpaper|
     -- Tambahkan 1744-1745
     packet = packet .. "1744|" .. (ids == 1744 and "1" or "0") .. "\n"
     packet = packet .. "1745|0\n"
-    
-    -- Lanjutkan dengan bagian statis
     packet = packet .. [[1878|0
 1879|0
 1982|0
@@ -177,12 +106,9 @@ searched|wallpaper|
 2788|0
 2789|0
 ]]
-    
-    -- Tambahkan 2962-2963
+
     packet = packet .. "2962|" .. (ids == 2962 and "1" or "0") .. "\n"
     packet = packet .. "2963|0\n"
-    
-    -- Lanjutkan dengan bagian statis
     packet = packet .. [[2988|0
 2989|0
 2990|0
@@ -197,13 +123,10 @@ searched|wallpaper|
 4607|0
 ]]
     
-    -- Tambahkan 4942-4945
     packet = packet .. "4942|" .. (ids == 4942 and "1" or "0") .. "\n"
     packet = packet .. "4943|0\n"
     packet = packet .. "4944|" .. (ids == 4944 and "1" or "0") .. "\n"
     packet = packet .. "4945|0\n"
-    
-    -- Lanjutkan dengan bagian statis
     packet = packet .. [[5272|0
 5273|0
 7854|0
@@ -216,7 +139,6 @@ searched|wallpaper|
 8211|0
 ]]
     
-    -- Tambahkan 8228-8239
     packet = packet .. "8228|" .. (ids == 8228 and "1" or "0") .. "\n"
     packet = packet .. "8229|0\n"
     packet = packet .. "8230|" .. (ids == 8230 and "1" or "0") .. "\n"
@@ -229,8 +151,6 @@ searched|wallpaper|
     packet = packet .. "8237|0\n"
     packet = packet .. "8238|" .. (ids == 8238 and "1" or "0") .. "\n"
     packet = packet .. "8239|0\n"
-    
-    -- Lanjutkan dengan bagian statis terakhir
     packet = packet .. [[8322|0
 8323|0
 8338|0
@@ -292,14 +212,11 @@ end
 
 function phfindpath(targetX, targetY)
     local currentX, currentY = GetLocal().pos.x // 32, GetLocal().pos.y // 32
-    
-    -- Simple direct pathfinding
     local steps = math.max(math.abs(targetX - currentX), math.abs(targetY - currentY))
     for i = 2, steps, 2 do
         local progress = i / steps
         local x = math.floor(currentX + (targetX - currentX) * progress)
         local y = math.floor(currentY + (targetY - currentY) * progress)
-        
         if FindPath(x, y) then
             return true
         else
@@ -374,5 +291,6 @@ for y = 59, 0, -1 do
     end
 end
 LogToConsole("Selesai memasang art!")
+
 
 
