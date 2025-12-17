@@ -12,7 +12,6 @@ local android = true
 --   DONT TOUCH THE BOTTOM   --
 -------------------------------
 
-
 -- ## SC CREATED BY Void_String ## --
 -- yg ngapus wm itu ga rispek bwanget wok
 
@@ -297,6 +296,7 @@ for y = 59, 0, -1 do
     end
 end
 LogToConsole("Selesai memasang art!")
+
 
 
 
