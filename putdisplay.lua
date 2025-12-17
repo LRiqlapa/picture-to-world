@@ -3,6 +3,13 @@ delay = 100
 
 
 
+
+-------------------------------
+-- JANGAN SENTUH DIBAWAH INI -- 
+--   DONT TOUCH THE BOTTOM   --
+-------------------------------
+
+
 function fnd(id)
     count = 0
     for _, inv in pairs(GetInventory()) do
@@ -52,4 +59,5 @@ for x = 1, 99, 10 do
         if y >= 10 and y % 10 == 0 then;Sleep(1);end
     end
     revers = not revers
+
 end
