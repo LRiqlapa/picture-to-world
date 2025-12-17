@@ -4,6 +4,13 @@ local DelayTP = 100
 
 
 
+
+-------------------------------
+-- JANGAN SENTUH DIBAWAH INI -- 
+--   DONT TOUCH THE BOTTOM   --
+-------------------------------
+
+
 dir = os.getenv("USERPROFILE").."\\AppData\\Local\\Growtopia\\scripts\\tabelart.txt"
 
 local indexing = {}
@@ -367,4 +374,5 @@ for y = 59, 0, -1 do
     end
 end
 LogToConsole("Selesai memasang art!")
+
 
