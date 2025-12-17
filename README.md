@@ -80,4 +80,7 @@ like this:
 and execute artloader.lua again, just that
 
 
+# EXAMPLE
+
+<img width="522" height="406" alt="image" src="https://github.com/user-attachments/assets/1c282543-35e3-42aa-8d14-204426cc0411" />
 
