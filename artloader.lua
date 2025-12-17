@@ -13,6 +13,10 @@ local android = true
 -------------------------------
 
 
+-- ## SC CREATED BY Void_String ## --
+-- yg ngapus wm itu ga rispek bwanget wok
+
+
 dir = (android and "/storage/emulated/0/Android/media/com.rtsoft.growtopia/scripts/tabelart.txt") or (os.getenv("USERPROFILE").."\\AppData\\Local\\Growtopia\\scripts\\tabelart.txt")
 
 local indexing = {}
@@ -293,6 +297,7 @@ for y = 59, 0, -1 do
     end
 end
 LogToConsole("Selesai memasang art!")
+
 
 
 
