@@ -77,8 +77,6 @@ searched|wallpaper|
     packet = packet .. "569|0\n"
     packet = packet .. "570|" .. (ids == 570 and "1" or "0") .. "\n"
     packet = packet .. "571|0\n"
-    
-    -- Tambahkan bagian 1156-1159
     packet = packet .. "1156|" .. (ids == 1156 and "1" or "0") .. "\n"
     packet = packet .. "1157|0\n"
     packet = packet .. "1158|" .. (ids == 1158 and "1" or "0") .. "\n"
@@ -87,7 +85,6 @@ searched|wallpaper|
 1727|0
 ]]
     
-    -- Tambahkan 1744-1745
     packet = packet .. "1744|" .. (ids == 1744 and "1" or "0") .. "\n"
     packet = packet .. "1745|0\n"
     packet = packet .. [[1878|0
@@ -296,6 +293,7 @@ for y = 59, 0, -1 do
     end
 end
 LogToConsole("Selesai memasang art!")
+
 
 
 
