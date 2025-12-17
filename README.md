@@ -84,3 +84,4 @@ and execute artloader.lua again, just that
 
 <img width="522" height="406" alt="image" src="https://github.com/user-attachments/assets/1c282543-35e3-42aa-8d14-204426cc0411" />
 
+<img width="522" height="406" alt="imassse" src="https://github.com/user-attachments/assets/8437132b-f94f-4759-b0d8-2095b371e439" />
