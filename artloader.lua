@@ -2,6 +2,8 @@
 local delayput = 100
 local DelayTP = 100
 
+-- your os
+local android = true
 
 
 
@@ -11,7 +13,7 @@ local DelayTP = 100
 -------------------------------
 
 
-dir = os.getenv("USERPROFILE").."\\AppData\\Local\\Growtopia\\scripts\\tabelart.txt"
+dir = (android and "/storage/emulated/0/Android/media/com.rtsoft.growtopia/scripts/tabelart.txt") or (os.getenv("USERPROFILE").."\\AppData\\Local\\Growtopia\\scripts\\tabelart.txt")
 
 local indexing = {}
 local inti = 1
@@ -291,6 +293,7 @@ for y = 59, 0, -1 do
     end
 end
 LogToConsole("Selesai memasang art!")
+
 
 
 
