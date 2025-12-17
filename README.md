@@ -52,4 +52,8 @@ then click download button for got the tabel pixel
 
 # How to run
 
-move
+move [artloader.lua](https://github.com/LRiqlapa/picture-to-world/blob/main/artloader.lua) and tabelart.txt in to your bothax scripts folder 
+
+- directory scripts:
+
+
