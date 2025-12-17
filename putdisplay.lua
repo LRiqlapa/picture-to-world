@@ -1,5 +1,5 @@
 delay = 100
-
+UsingMray = true
 
 
 
@@ -47,7 +47,8 @@ return FindPath(x-1, y, d) or FindPath(x, y, d)
 end
 
 local revers = true
-for x = 1, 99, 10 do
+local canput = (UsingMray and 10) or (0)
+for x = 1, 99, canput do
      local xa = (revers and 59) or (0)
      local xb = (revers and 0) or (59)
      local xm = (revers and -1) or (1)
@@ -62,4 +63,5 @@ for x = 1, 99, 10 do
     revers = not revers
 
 end
+
 
