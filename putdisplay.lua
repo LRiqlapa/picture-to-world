@@ -47,7 +47,7 @@ return FindPath(x-1, y, d) or FindPath(x, y, d)
 end
 
 local revers = true
-local canput = (UsingMray and 10) or (0)
+local canput = (UsingMray and 10) or (1)
 for x = 1, 99, canput do
      local xa = (revers and 59) or (0)
      local xb = (revers and 0) or (59)
@@ -63,5 +63,6 @@ for x = 1, 99, canput do
     revers = not revers
 
 end
+
 
 
